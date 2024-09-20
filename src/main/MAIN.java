@@ -20,22 +20,22 @@ public class MAIN {
             System.out.println("Product CRUD System\n");
             
             do {
-                System.out.println("1. Salary");
+                System.out.println("1. Grade");
                 System.out.println("2. Account");
-                System.out.println("3. Receipt");
+                System.out.println("3. Product");
                 System.out.println("Enter selection: ");
                 
                 int select = sc.nextInt();
                 
                 switch(select) {
                     case 1:
-                        sl.getSalary();
+                        gr.getGrade();
                         break;
                     case 2:
-                        ac.getAccounts();
+                        ac.getAccount();
                         break;
                     case 3:
-                        rc.getReceipt();
+                        pr.getProduct();
                         break;
                     default:
                         System.out.println("Invalid choice.");
@@ -54,11 +54,19 @@ public class MAIN {
         private void getAccounts() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
+
+        private void getAccount() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
     }
 
     private static class Grade {
 
         public Grade() {
+        }
+
+        private void getGrade() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
 
@@ -66,25 +74,29 @@ public class MAIN {
 
         public Product() {
         }
-    }
 
-    private static class sl {
-
-        private static void getSalary() {
+        private void getProduct() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        public sl() {
         }
     }
 
-    private static class rc {
+    private static class gr {
 
-        private static void getReceipt() {
+        private static void getGrade() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
 
-        public rc() {
+        public gr() {
+        }
+    }
+
+    private static class pr {
+
+        private static void getProduct() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        public pr () {
         }
     }
 }
